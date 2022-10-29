@@ -6,7 +6,7 @@ const getDogs = async () => {
         const apiInfo = apiUrl.data.map((dog) => {
             let tempArray = [];
             if(dog.temperament){
-                tempArray = dog.temperament.split(', ');
+                tempArray = dog.temperament.split('  ');
             }
                 return {
                     id: dog.id ? dog.id : "id doesnt exist",

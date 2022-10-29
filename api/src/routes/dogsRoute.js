@@ -1,8 +1,7 @@
 const express = require("express");
 const dogsRoute = express.Router();
-//const { Dog, Temperament } = require("../db");
 const getDogs = require("../controllers/getDogs");
-// const getDogsTotal = require("../controllers/getDogsTotal");
+
 
 dogsRoute.get("/", async(req, res) => {
     let { name } = req.query;
