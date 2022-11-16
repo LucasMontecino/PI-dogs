@@ -16,10 +16,10 @@ module.exports = (sequelize) => {
       unique: true,
     },
     height: {
-      type: DataTypes.STRING,
+      type: DataTypes.ARRAY(DataTypes.STRING),
     },
     weight: {
-      type: DataTypes.STRING,
+      type: DataTypes.ARRAY(DataTypes.STRING),
     },
     life_span: {
       type: DataTypes.STRING,
@@ -27,6 +27,11 @@ module.exports = (sequelize) => {
     image: {
       type: DataTypes.STRING,
     },
+    createdInDb: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+      defaultValue: true
+    }
   }, {
     timestamps: false,
   });

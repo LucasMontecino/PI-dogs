@@ -6,7 +6,7 @@ const getTemperaments = async () => {
     const apiInfo = apiUrl.data.map((temp) => temp.temperament);
     const temps = apiInfo.toString().split(",");
     temps.forEach(el => {
-        let i = el.trim();
+        let i = el.trim()
         Temperament.findOrCreate({
             where: {name: i},
         });

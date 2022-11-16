@@ -1,0 +1,82 @@
+.main_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sub_container{
+    width: 105%;
+    border: 0.5rem solid antiquewhite;
+    border-radius: 10px;
+    box-shadow: 14px 15px 3px -4px rgba(0, 0, 0, 0.75);
+}
+
+.container_elements{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    left: 25%;
+    top: 25%;
+    color: antiquewhite;
+    padding: 1rem 0 1rem 1rem;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    position: relative;
+    border-radius: 5px;
+}
+
+.button_home{
+    position: absolute;
+    top: 7%;
+    width: 100px;
+    height: 40px;
+    font-size: 1.1rem;
+    background: antiquewhite;
+    padding: 0.65rem 0.6rem;
+    z-index: 100;
+    border: 0.1rem solid antiquewhite;
+    text-shadow: 0 0 3px #ccc;
+    color: darkslategrey;
+}
+
+.button_home:hover{
+    background-color: rgba(204, 204, 204, 0.774);
+    color: antiquewhite;
+}
+
+.sub_container img{
+    width: 450px;
+    max-width: 600px;
+    max-height: 370px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.right_container{
+    padding-left: 5%;
+}
+
+.right_container h1{
+    margin: 0;
+}
+
+.right_container h3{
+    margin: 0.6rem;
+}
+
+.list_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+}
+
+.list_container li{
+    list-style: none;
+    padding: 0.2rem 0.4rem;
+}

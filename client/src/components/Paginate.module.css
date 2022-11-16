@@ -1,0 +1,39 @@
+
+.ul_container{
+    padding: 0 0 1rem 0.5rem;
+    list-style: none;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.li_container{
+    list-style: none;
+    margin: 0.2rem;
+    text-align: center;
+} 
+
+.li_container button{
+    color: antiquewhite;
+    background-color: #282c34;
+    width: 2.1rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 10%;
+    border: 1px solid antiquewhite;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.6s;
+}
+
+.li_container button:hover{
+    background-color: rgba(204, 204, 204, 0.34);
+    color: white;
+    opacity: .9;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: #15171a;
+}

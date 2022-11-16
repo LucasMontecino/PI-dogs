@@ -8,8 +8,8 @@ dogsRoute.get("/", async(req, res) => {
     try {
         const allDogs = await getDogs();
         if(name && allDogs.length){
-            const dogName = await allDogs.find(dog => dog.name.toLowerCase().includes(name.toLowerCase()));
-            dogName ?
+            const dogName = allDogs.filter(dog => dog.name.toLowerCase().includes(name.toLowerCase()));
+            dogName.length ?
             res.status(200).send(dogName) :
             res.status(404).send("No dog with that name");
         };
