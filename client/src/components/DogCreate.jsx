@@ -108,7 +108,7 @@ export default function DogCreate(){
                         <input
                         className={style.input_name}
                         type="text" value={input.name} name="name"
-                        onChange={e => handleChange(e)} placeholder="Name..."/>
+                        onChange={e => handleChange(e)} placeholder="Name..." />
                     </div>
                     <div className={style.error_form}>
                         {errors.name && (<p>{errors.name}</p>)}

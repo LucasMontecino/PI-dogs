@@ -6,7 +6,6 @@ import style from './DogDetail.module.css';
 
 export default function DogDetail(props){
     const dispatch = useDispatch();
-    // let { id } = useParams();
 
     useEffect(()=>{
         dispatch(getDogDetail(props.match.params.id));

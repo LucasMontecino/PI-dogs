@@ -4,7 +4,7 @@ const { Dog, Temperament } = require("../db");
 
 postRoute.post("/", async (req, res) => {
     let { name, min_height, max_height, min_weight, max_weight, life_span, image, temperament } = req.body;
-    const fixedHeight = [];
+        const fixedHeight = [];
         const minHeight = min_height;
         const maxHeight = max_height;
         fixedHeight.push(minHeight, maxHeight);
