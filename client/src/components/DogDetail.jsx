@@ -12,7 +12,7 @@ export default function DogDetail(props) {
     return () => {
       dispatch(getDogDetail(""));
     };
-  }, [dispatch]);
+  }, [dispatch, props.match.params.id]);
 
   const details = useSelector((state) => state.detail);
 
