@@ -59,6 +59,7 @@ export default function Home() {
   const handleWeight = (e) => {
     e.preventDefault();
     dispatch(orderByWeight(e.target.value));
+    setCurrentPage(1);
     setOrder(`Ordered ${e.target.value}`);
   };
 
@@ -82,7 +83,7 @@ export default function Home() {
 
           <div className={style.container_filters}>
             <select onChange={(e) => handleSort(e)}>
-              <option disabled selected defaultValue>
+              <option disabled selected>
                 Alphabetical order
               </option>
               <option value="asc">Ascending</option>
@@ -90,7 +91,7 @@ export default function Home() {
             </select>
 
             <select onChange={(e) => handleWeight(e)}>
-              <option disabled selected defaultValue>
+              <option disabled selected>
                 Filter by weigth
               </option>
               <option value="max_weight">Max</option>
@@ -98,7 +99,7 @@ export default function Home() {
             </select>
 
             <select onChange={(e) => handleFilterTemperaments(e)}>
-              <option disabled selected defaultValue>
+              <option disabled selected>
                 Temperaments
               </option>
               <option value="All">All Temperaments</option>
@@ -110,7 +111,7 @@ export default function Home() {
             </select>
 
             <select onChange={(e) => handleFilterCreated(e)}>
-              <option disabled selected defaultValue>
+              <option disabled selected>
                 Api/Created Filter
               </option>
               <option value="All">All</option>

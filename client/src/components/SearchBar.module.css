@@ -1,28 +1,41 @@
-.searchbar_container{
+.searchbar_container {
     height: 30px;
     width: 100%;
 }
 
-.searchbar{
+.searchbar {
     height: 116%;
     width: 50%;
+    padding-left: 8px;
     font-size: 1.3rem;
-    border: 1px solid antiquewhite;
-    border-top: none;
-    outline: none;
+
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+    outline: none;
 }
 
-.searchbar_button{
+.searchbar_container button {
+    margin-top: 0px;
     border-radius: 0;
     height: 116%;
-    width: 4rem;
+    width: 48px;
     background-color: antiquewhite;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    transition-duration: 0.5s;
 }
 
-.searchbar_button i{
-    font-size: 1.3rem;
+.searchbar_container button:hover {
+    background-color: rgba(204, 204, 204, 0.615);
+    color: antiquewhite;
+    border: 1px solid antiquewhite;
+}
+
+.searchbar_button i {
+
+    font-size: 20.2px;
 }
