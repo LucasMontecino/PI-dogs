@@ -94,7 +94,7 @@ export default function Home() {
               <option disabled selected>
                 Filter by weigth
               </option>
-              <option value="max_weight">Max Hola Lucas</option>
+              <option value="max_weight">Max</option>
               <option value="min_weight">Min</option>
             </select>
 
